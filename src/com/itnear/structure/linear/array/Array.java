@@ -32,7 +32,7 @@ public class Array<E> {
      * @return 元素个数
      */
     public int getSize() {
-        return this.size;
+        return size;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Array<E> {
      * @return 容量大小
      */
     public int getCapacity() {
-        return this.data.length;
+        return data.length;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Array<E> {
      * @return 空返回true，否则返回false
      */
     public boolean isEmpty() {
-        return this.size == 0;
+        return size == 0;
     }
 
     /**
@@ -60,18 +60,18 @@ public class Array<E> {
      * @param e     元素
      */
     public void add(int index, E e) {
-        if (index < 0 || index > this.size) {
+        if (index < 0 || index > size) {
             throw new IllegalArgumentException("数组下标越界");
         }
 
         // 扩容
-        if (this.size == this.data.length) {
-            resize(this.data.length * 2);
+        if (size == data.length) {
+            resize(data.length * 2);
         }
 
         // 添加元素
-        for (int i = this.size - 1; i >= index; i--) {
-            this.data[i + 1] = this.data[i];
+        for (int i = size - 1; i >= index; i--) {
+            data[i + 1] = data[i];
         }
         data[index] = e;
         size++;
@@ -92,7 +92,7 @@ public class Array<E> {
      * @param e 元素
      */
     public void addLast(E e) {
-        add(this.size, e);
+        add(size, e);
     }
 
     /**
@@ -102,20 +102,20 @@ public class Array<E> {
      * @return 删除元素
      */
     public E remove(int index) {
-        if (index < 0 || index >= this.size) {
+        if (index < 0 || index >= size) {
             throw new IllegalArgumentException("数组下标越界");
         }
 
         // 删除元素
-        E ret = this.data[index];
-        for (int i = index + 1; i < this.size; i++) {
-            this.data[i - 1] = this.data[i];
+        E ret = data[index];
+        for (int i = index + 1; i < size; i++) {
+            data[i - 1] = data[i];
         }
-        this.size--;
+        size--;
 
         // 缩容
-        if (this.size == this.data.length / 4 && this.data.length / 2 != 0) {
-            resize(this.data.length / 2);
+        if (size == data.length / 4 && data.length / 2 != 0) {
+            resize(data.length / 2);
         }
 
         return ret;
@@ -136,7 +136,7 @@ public class Array<E> {
      * @return 尾部元素
      */
     public E removeLast() {
-        return remove(this.size - 1);
+        return remove(size - 1);
     }
 
     /**
@@ -146,11 +146,11 @@ public class Array<E> {
      * @return 元素
      */
     public E get(int index) {
-        if (index < 0 || index > this.size) {
+        if (index < 0 || index > size) {
             throw new IllegalArgumentException("数组下标越界");
         }
 
-        return this.data[index];
+        return data[index];
     }
 
     /**
@@ -168,7 +168,7 @@ public class Array<E> {
      * @return 尾部元素
      */
     public E getLast() {
-        return get(this.size - 1);
+        return get(size - 1);
     }
 
     /**
@@ -178,8 +178,8 @@ public class Array<E> {
      * @return 存在返回true，否则返回false
      */
     public boolean contains(E e) {
-        for (int i = 0; i < this.size; i++) {
-            if (this.data[i].equals(e)) {
+        for (int i = 0; i < size; i++) {
+            if (data[i].equals(e)) {
                 return true;
             }
         }
@@ -194,11 +194,11 @@ public class Array<E> {
      * @param e     元素
      */
     public void set(int index, E e) {
-        if (index < 0 || index >= this.size) {
+        if (index < 0 || index >= size) {
             throw new IllegalArgumentException("数组下标越界");
         }
 
-        this.data[index] = e;
+        data[index] = e;
     }
 
     /**
@@ -208,7 +208,7 @@ public class Array<E> {
      * @param j 索引
      */
     public void swap(int i, int j) {
-        if (i < 0 || i >= this.size || j < 0 || j >= this.size) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
             throw new IllegalArgumentException("数组下标越界");
         }
 
@@ -224,8 +224,8 @@ public class Array<E> {
      */
     private void resize(int newCapacity) {
         E[] newData = (E[]) new Object[newCapacity];
-        for (int i = 0; i < this.size; i++) {
-            newData[i] = this.data[i];
+        for (int i = 0; i < size; i++) {
+            newData[i] = data[i];
         }
         data = newData;
     }
@@ -233,8 +233,8 @@ public class Array<E> {
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append(String.format("数组容量：%d  数组元素个数：%d\n[", this.data.length, this.size));
-        for (int i = 0; i < this.size; i++) {
+        res.append(String.format("数组容量：%d  数组元素个数：%d\n[", data.length, size));
+        for (int i = 0; i < size; i++) {
             res.append(data[i]).append(",");
         }
         return res.replace(res.length() - 1, res.length(), "]").toString();
