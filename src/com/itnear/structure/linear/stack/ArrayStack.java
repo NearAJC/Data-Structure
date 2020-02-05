@@ -3,7 +3,7 @@ package com.itnear.structure.linear.stack;
 import com.itnear.structure.linear.array.Array;
 
 /**
- * 描述：以数组做为容器的栈
+ * 描述：顺序栈
  * 作者：NearJC
  * 时间：2020/02/05
  */

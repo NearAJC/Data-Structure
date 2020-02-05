@@ -1,10 +1,9 @@
 package com.itnear.structure.linear.stack;
 
-
 import com.itnear.structure.linear.linkedlist.LinkedList;
 
 /**
- * 描述：以链表做为容器的栈
+ * 描述：链式栈
  * 作者：NearJC
  * 时间：2020/02/05
  */
