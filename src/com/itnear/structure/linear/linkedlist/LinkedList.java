@@ -186,7 +186,7 @@ public class LinkedList<E> {
      * @return 删除元素
      */
     public E removeLast() {
-        return remove(size);
+        return remove(size - 1);
     }
 
     /**
