@@ -1,6 +1,6 @@
-package com.itnear.structure.linear.stack;
+package com.itnear.structure.stack;
 
-import com.itnear.structure.linear.linkedlist.LinkedList;
+import com.itnear.structure.linkedlist.LinkedList;
 
 /**
  * 描述：链式栈

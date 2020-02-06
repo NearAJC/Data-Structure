@@ -1,7 +1,7 @@
-package com.itnear.structure.tree.bst;
+package com.itnear.structure.tree;
 
-import com.itnear.structure.linear.queue.LinkedListQueue;
-import com.itnear.structure.linear.queue.Queue;
+import com.itnear.structure.queue.LinkedListQueue;
+import com.itnear.structure.queue.Queue;
 
 /**
  * 描述：二分搜索树

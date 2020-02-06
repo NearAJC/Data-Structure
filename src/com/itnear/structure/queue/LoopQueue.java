@@ -1,4 +1,4 @@
-package com.itnear.structure.linear.queue;
+package com.itnear.structure.queue;
 
 public class LoopQueue<E> implements Queue<E> {
 

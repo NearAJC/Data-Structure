@@ -1,4 +1,4 @@
-package com.itnear.structure.linear.linkedlist;
+package com.itnear.structure.linkedlist;
 
 /**
  * 描述：链表

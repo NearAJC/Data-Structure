@@ -1,4 +1,4 @@
-package com.itnear.structure.linear.queue;
+package com.itnear.structure.queue;
 
 /**
  * 描述：链式队列

@@ -1,6 +1,6 @@
-package com.itnear.structure.linear.queue;
+package com.itnear.structure.queue;
 
-import com.itnear.structure.linear.array.Array;
+import com.itnear.structure.array.Array;
 
 /**
  * 描述：顺序队列

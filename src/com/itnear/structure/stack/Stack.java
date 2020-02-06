@@ -1,4 +1,4 @@
-package com.itnear.structure.linear.stack;
+package com.itnear.structure.stack;
 
 /**
  * 描述：栈接口

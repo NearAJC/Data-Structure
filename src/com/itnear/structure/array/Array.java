@@ -1,4 +1,4 @@
-package com.itnear.structure.linear.array;
+package com.itnear.structure.array;
 
 /**
  * 描述：数组

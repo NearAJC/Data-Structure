@@ -1,6 +1,6 @@
-package com.itnear.structure.linear.stack;
+package com.itnear.structure.stack;
 
-import com.itnear.structure.linear.array.Array;
+import com.itnear.structure.array.Array;
 
 /**
  * 描述：顺序栈
