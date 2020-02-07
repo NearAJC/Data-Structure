@@ -5,7 +5,7 @@ import com.itnear.structure.array.Array;
 import java.util.Random;
 
 /**
- * 描述：优先队列（最大堆）
+ * 描述：最大堆
  * 作者：NearJC
  * 时间：2020/02/05
  */
@@ -164,7 +164,7 @@ public class MaxHeap<E extends Comparable<E>> {
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
-        res.append(String.format("优先队列 元素个数：%d \n[", data.getSize()));
+        res.append(String.format("最大堆 元素个数：%d \n[", data.getSize()));
         for (int i = 0; i < data.getSize(); i++) {
             res.append(data.get(i)).append(",");
         }
