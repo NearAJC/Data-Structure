@@ -1,4 +1,4 @@
-package com.itnear.structure.tree;
+package com.itnear.structure.tree.binary_search;
 
 import com.itnear.structure.queue.LinkedListQueue;
 import com.itnear.structure.queue.Queue;

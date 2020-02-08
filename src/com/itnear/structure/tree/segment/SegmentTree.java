@@ -1,4 +1,4 @@
-package com.itnear.structure.tree;
+package com.itnear.structure.tree.segment;
 
 /**
  * 描述：线段树

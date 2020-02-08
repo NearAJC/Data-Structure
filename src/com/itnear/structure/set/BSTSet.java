@@ -1,6 +1,6 @@
 package com.itnear.structure.set;
 
-import com.itnear.structure.tree.BST;
+import com.itnear.structure.tree.binary_search.BST;
 
 /**
  * 描述：二分搜索树集合

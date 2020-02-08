@@ -1,4 +1,4 @@
-package com.itnear.structure.tree;
+package com.itnear.structure.tree.trie;
 
 import com.itnear.util.FileOperation;
 

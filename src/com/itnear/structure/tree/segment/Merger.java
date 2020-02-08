@@ -1,4 +1,4 @@
-package com.itnear.structure.tree;
+package com.itnear.structure.tree.segment;
 
 /**
  * 描述：合并业务接口
