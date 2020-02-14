@@ -2,7 +2,6 @@ package com.itnear.structure.graph;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.util.TreeSet;
 
@@ -122,7 +121,7 @@ public class AdjSet {
      *
      * @param v 顶点
      */
-    private void validateVertex(int v) {
+    public void validateVertex(int v) {
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex " + " is invalid");
         }
